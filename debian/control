@@ -24,12 +24,12 @@ Build-Depends: debhelper (>= 9),
  ocl-icd-opencl-dev [!ppc64el],
  python-dev,
  python3-dev,
- python-support (>= 0.4.1),
+ dh-python,
  python-numpy,
  python3-numpy,
  python-sphinx,
  python3-sphinx,
- libvtk6,
+ libvtk6.2,
  libvtk6-dev
 Standards-Version: 3.9.5
 Vcs-Git: git://anonscm.debian.org/debian-science/packages/opencv.git
