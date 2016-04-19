@@ -23,9 +23,12 @@ Build-Depends: debhelper (>= 9),
  libeigen3-dev,
  ocl-icd-opencl-dev [!ppc64el],
  python-dev,
+ python3-dev,
  python-support (>= 0.4.1),
  python-numpy,
+ python3-numpy,
  python-sphinx,
+ python3-sphinx,
  libvtk6,
  libvtk6-dev
 Standards-Version: 3.9.5
@@ -841,6 +844,26 @@ Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}, python-numpy-abi
 Provides: ${python:Provides}
 Replaces: python2.3-opencv (<= 0.9.7-3)
 Conflicts: python2.3-opencv (<= 0.9.7-3)
+Description: Python bindings for the computer vision library
+ This package contains Python bindings for the OpenCV (Open Computer Vision)
+ library.
+ .
+ The Open Computer Vision Library is a collection of algorithms and sample
+ code for various computer vision problems. The library is compatible with
+ IPL (Intel's Image Processing Library) and, if available, can use IPP
+ (Intel's Integrated Performance Primitives) for better performance.
+ .
+ OpenCV provides low level portable data types and operators, and a set
+ of high level functionalities for video acquisition, image processing and
+ analysis, structural analysis, motion analysis and object tracking, object
+ recognition, camera calibration and 3D reconstruction.
+
+Package: python3-opencv3
+Section: python
+Architecture: any
+Depends: ${python3:Depends}, ${shlibs:Depends}, ${misc:Depends}, python3-numpy-abi9,
+		python3-numpy (>= 1:1.6.1)
+Provides: ${python:Provides}
 Description: Python bindings for the computer vision library
  This package contains Python bindings for the OpenCV (Open Computer Vision)
  library.
