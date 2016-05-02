@@ -367,7 +367,7 @@ Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends},
  	libopencv3-core (= ${binary:Version}),
-	libvtk6
+	libvtk6.2
 Description: computer vision Image Processing library
   This package contains the OpenCV (Open Computer Vision) Image Processing
   runtime libraries.
